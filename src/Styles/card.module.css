@@ -1,0 +1,49 @@
+.light .dark{
+  position: relative;
+  width: 11rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: solid 1.5px 
+}
+
+.dark{
+  position: relative;
+  width: 11rem;
+  padding: 1rem;
+  border-radius: 8px;
+  border: solid 1.5px white; 
+  & .h3{
+      color: white;
+  }
+  & .h4{
+      color: white;
+  }
+}
+
+
+.img {
+  height: auto;
+  width: 15rem; 
+}
+
+.btn {
+  color: rgb(1, 2, 78);
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+
+
+

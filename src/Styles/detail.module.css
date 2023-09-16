@@ -1,0 +1,45 @@
+.dark{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(0, 1, 36);
+  height: 85vh;
+  & .h1{
+      color: white;
+  } & .div{
+      border-color: white;
+  } & .iconH2{
+      color: white;
+  }
+}
+.light{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+}
+
+.h1{
+  text-align: center;
+  font-size: 20px;
+}
+.div{
+  border: solid 1.5px black;
+  padding: 0.7rem 2rem;
+  border-radius: 7px;
+}
+
+.h2{
+  color: rgb(250, 80, 80);
+  text-align: center;
+
+}
+.iconH2{
+  font-size: 17px;
+  text-align: end;
+}
+
+.icon{
+  font-size: 15px;
+  margin-right: 5px;
+}

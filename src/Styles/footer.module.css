@@ -12,31 +12,12 @@ img{
 
 .div{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 5rem;
     padding-right: 2rem;
 }
 
-.Ul{
-    display: flex;
-    justify-content: space-between;
-    width: 4rem;
-    list-style: none;
-}
-
-.a{
-    color: rgb(1, 2, 78);
-    font-size: 22px;
-}
-.a:hover{
-    color: rgb(128, 128, 128);
-}
-
 .p{
     font-size: 20px;
-}
-
-span{
-    color: rgb(174, 174, 174);
 }

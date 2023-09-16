@@ -1,7 +1,7 @@
 
 .light .dark{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 3rem;
     padding-right: 2rem;
@@ -17,11 +17,12 @@
     }
 }
 
-.Ul{
+.ul{
     display: flex;
-    justify-content: space-between;
-    width: 20rem;
+    justify-content: space-around;
+    padding: 2rem;
     list-style: none;
+    margin: 0rem;
 }
 
 .link{

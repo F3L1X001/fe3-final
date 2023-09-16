@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useContext } from "react";
 import { ContextGlobal } from "./utils/global.context";
-import  Styles  from '../Styles/contac.module.css';
+import  Styles  from '../Styles/contact.module.css';
 const Form = () => {
   //Aqui deberan implementar el form completo con sus validaciones
   const {state} = useContext(ContextGlobal)
@@ -40,11 +40,13 @@ const Form = () => {
       console.log(`${nombre} nos pondremos en contacto a la brevedad.`);
       setNombre("");
       setEmail("");
+      setErrors("")
       setValidacion("info enviada")
       
     }else{
-      console.log('paso por aca');
-      setErrors("Información incorrecta por favro verificar");
+      
+      setValidacion("")
+      setErrors("Información incorrecta por favor verificar");
     }
   }
 

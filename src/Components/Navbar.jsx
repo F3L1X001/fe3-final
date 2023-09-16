@@ -23,13 +23,14 @@ const Navbar = () => {
     <nav className={state.theme ==='light' ? Styles.light : Styles.dark}>
       {/* Aqui deberan agregar los liks correspondientes a las rutas definidas */}
       {/* Deberan implementar ademas la logica para cambiar de Theme con el button */}
-      <ul className={Styles.Ul}>
+      <ul className={Styles.ul}>
         <li className={Styles.li}><Link to="/home" className={Styles.link}>Home</Link></li>
         <li className={Styles.li}><Link to="/contacto" className={Styles.link}>Contacto</Link></li>
         <li className={Styles.li}><Link to="/favs" className={Styles.link}>Favoritos</Link></li>
+        <li className={Styles.li}><button onClick={themeChange} className={state.theme === 'light'?Styles.sunny:Styles.moon}>{state.theme==='light' ? (<FontAwesomeIcon icon={faSun} />):(<FontAwesomeIcon icon={faMoon} />)}
+        </button></li>
       </ul>
-      <button onClick={themeChange} className={state.theme === 'light'?Styles.sunny:Styles.moon}>{state.theme==='light' ? (<FontAwesomeIcon icon={faSun} />):(<FontAwesomeIcon icon={faMoon} />)}
-        </button>
+      
     </nav>
   )
 }

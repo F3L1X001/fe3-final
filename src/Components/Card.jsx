@@ -23,12 +23,12 @@ const Card = ({name, username, id}) => {
     <div className={state.theme ==='light' ? Styles.light : Styles.dark}>
       
         <Link to={`/dentist/${id}`}>
-          <img src="../images/doctor.jpg"  / >
+          <img src="../images/doctor.jpg" className={Styles.img} / >
           <h3 className={Styles.h3}> {name}</h3>
           <h4 className={Styles.h4}> {username}</h4>
         </Link>
         <div className={Styles.card_content}>
-            { !inFav ? (<button onClick={addFav} className={state.theme ==='light' ? Styles.btnLight : Styles.btnDark}>Add fav</button>) : (<button onClick={rmvFav} className={state.theme ==='light' ? Styles.btnLight : Styles.btnDark}>Remove fav</button>)}
+            { !inFav ? (<button onClick={addFav} className={state.theme ==='light' ? Styles.btn : Styles.btndark}>Add fav</button>) : (<button onClick={rmvFav} className={state.theme ==='light' ? Styles.btn : Styles.btndark}>Remove fav</button>)}
         </div>
     </div>
   );

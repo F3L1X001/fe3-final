@@ -2,7 +2,7 @@ import React from 'react'
 import Form from '../Components/Form'
 import { useContext } from "react";
 import { ContextGlobal } from "../Components/utils/global.context";
-import  Styles  from "../Styles/contac.module.css";
+import  Styles  from "../Styles/contact.module.css";
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Contact = () => {
